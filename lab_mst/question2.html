@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Question 2</title>
+</head>
+<body>
+
+<p id="text">Click the button to change this text by aryan dahiya</p>
+
+<button onclick="changeText()">Click Me</button>
+
+<script>
+
+function changeText() {
+
+    let para = document.getElementById("text");
+
+    para.textContent = "Welcome to JavaScript DOM Manipulation";
+
+    para.style.color = "blue";
+
+    para.style.fontSize = "24px";
+
+}
+
+</script>
+
+</body>
+</html>

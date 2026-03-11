@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Promise Example</title>
+</head>
+<body>
+
+<h2>Promise Demo</h2>
+<button onclick="runPromise()">Run Promise</button>
+
+<script>
+
+function runPromise() {
+
+    const fetchData = new Promise(function(resolve, reject) {
+
+        setTimeout(function() {
+            resolve("Data fetched successfully");
+        }, 2000);
+
+    });
+
+    fetchData
+    .then(function(message) {
+        console.log(message);
+        alert(message);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+
+}
+
+</script>
+
+</body>
+</html>
