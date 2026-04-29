@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .form-container {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .inline {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .btn {
+            margin-top: 15px;
+            padding: 10px;
+            width: 48%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit {
+            background-color: green;
+            color: white;
+        }
+
+        .reset {
+            background-color: red;
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h2>Student Registration</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Password</label>
+        <input type="password" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" required>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" class="inline"> Male
+        <input type="radio" name="gender" class="inline"> Female
+
+        <label>Course</label>
+        <select>
+            <option>Select Course</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+        </select>
+
+        <label>Skills</label>
+        <input type="checkbox" class="inline"> HTML
+        <input type="checkbox" class="inline"> CSS
+        <input type="checkbox" class="inline"> JavaScript
+
+        <label>Address</label>
+        <textarea></textarea>
+
+        <button type="submit" class="btn submit">Submit</button>
+        <button type="reset" class="btn reset">Reset</button>
+    </form>
+</div>
+
+</body>
+</html>
